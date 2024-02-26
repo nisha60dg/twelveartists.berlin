@@ -1,0 +1,98 @@
+html, body{background:#fff;  margin:0 !important; padding:0; color:#000;}
+html body.custom-background{background:#fff;}
+body{ background:#fff; color:#000; position:relative;}
+html body.custom-background.yellow{ background:#ff9100;}
+.site{ display:flex; flex-direction:row-reverse;}
+.site_header{ width:25%; flex:0 0 25%; display:flex; margin-left:auto; justify-content:space-between; padding:1vw; padding-left:2vw; border-left: 4px solid #3e4044;}
+.site-content{ flex:0 0 75%;}
+.switcher_btn { width:2rem; height:2rem; border-radius:2rem; cursor:pointer; background:#fff; }
+.switcher_btn.yellow{ background:#ff9100; }
+
+body.yellow .site_header img{ filter:brightness(100) grayscale(1);}
+p{ margin-bottom:1vw; color:#3e4044; font-size:1.3vw;}
+body.yellow p {color:#fff;}
+p strong{color:#ff9100;}
+body.yellow p strong{color:#3e4044;}
+p strong.dark{color:#3e4044;}
+p strong.dark span{color:#ff9100;}
+body.yellow p strong.dark span{color:#fff;}
+.text-center{ text-align:center;}
+.scale_0_8{ transform:scale(0.8);}
+body.yellow .elementor-section{ background-color:#ff9100 !important;}
+body.yellow .elementor-section *{ color:#fff;}
+
+
+.site_navigation{ position:fixed; bottom:15px;  right:15px; width:22%;}
+.custom_search{  position:relative; margin-top:auto;}
+.custom_search .search_field{ color:#3e4044; border:none; background:transparent; outline:none; font-size: 1rem;  width: 100%;  padding-right: 60px; height:40px; border:2px solid #3e4044; border-radius:40px;  }
+.custom_search .search_field:focus{ outline:none;}
+.custom_search  .search_btn{ position:absolute; font-family: dashicons; color:#3e4044 !important; padding:7px; right:0; top:0; border: none; width: 60px; background: transparent !important; border-radius: 40px; font-size:1.5rem;}
+
+.arrowListRow{ display:flex; justify-content:space-between; margin-top:10px;}
+.arrowListRow .leftArrow{  width:2rem; height:2rem; border-radius:2rem; cursor:pointer; background:#3e4044; color:#fff; font-size:1rem; text-align:center; }
+.arrowListRow .navMenuIcon{ width:2rem; height:2rem; border-radius:2rem; cursor:pointer; background:#3e4044;color:#ff9100; font-size:1rem; text-align:center; }
+.arrowListRow .rightArrow{ width:2rem; height:2rem; border-radius:2rem; cursor:pointer; background:#3e4044;color:#fff;  font-size:1rem; text-align:center; }
+.arrowListRow span{line-height:2rem;}
+.slide-nav-wrapper{position:fixed; left:-300px;	top:0;	bottom:0;	background:#3e4044; box-shadow:3px 0px 5px 0 rgba(0,0,0,0.30); width: 220px; transition: 0.3s ease-in-out;
+    z-index: 9;}
+.slide-nav-wrapper.active{left:0;}
+.slide-nav-wrapper ul { margin:0; padding:0;}
+.slide-nav-wrapper ul li{ list-style:none; display:flex; flex-direction:column;}
+.slide-nav-wrapper ul li a{ padding:10px; font-size:1rem; text-decoration:none; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.10);}
+.slide-nav-wrapper ul li:hover a{color:#ff9100;}
+
+.navMenuIcon.clicked .dashicons-menu:before{content: "\f335";}
+
+
+.search_result{position: absolute;
+    bottom: 108%;
+    background: #fff;
+    left: 0;
+    right: 0; z-index: 9999;}
+.search_result ul{
+		padding: 0;
+    list-style: none;
+    margin: 0;
+	box-shadow:0 0 3px 0 rgba(0,0,0,0.40);
+	overflow-y:auto;
+    max-height: 50vh;
+	}
+.search_result ul li{
+	padding: 2px 5px;
+    margin-bottom: 2px;
+	font-size:1rem;
+	}
+.search_result ul li a{
+		color:#3e4044;
+		text-decoration:none;
+		display:block;
+	}
+.search_result ul li a	span{
+	transform: scale(0.7);
+    float: right;
+}
+.search_result ul li:hover{		
+    background: #f8f8f8;
+}
+.search_result ul li[data-title="title"]{
+	font-size: 0.7rem;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+	background: #f8f8f8;
+}
+
+@media screen and (max-width:767px){
+	*, *:before, *:after { box-sizing: border-box;}
+	.site {
+		flex-direction: column-reverse;
+	}
+	.site_header{ width:100%; flex:0 0 100%; border-top: 4px solid #3e4044; border-left:none; flex-wrap:wrap; padding:20px;}
+	.site_navigation{ position:static; width:100%; margin-top:20px;}
+	.slide-nav-wrapper{max-width:140px;}
+	html, body{height:initial;}	
+	p,.new_btn{font-size:1rem}
+	.right_content_slide{margin-top:0;}
+	.right_content_slide p{font-size:1rem}
+	.artist_vita{padding:15px;}	
+	
+}

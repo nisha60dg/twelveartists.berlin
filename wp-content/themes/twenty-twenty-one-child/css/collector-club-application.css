@@ -1,0 +1,177 @@
+.page-template-page-collectors-club-application .entry-content h1{ color:#3e4044;}
+.page-template-page-collectors-club-application .site{ min-height:100vh;}
+.site-content label{ margin-bottom:5px; display:block;}
+.error {
+    color: #FF9100;
+}
+.site-content  input[type=range].slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.site-content input[type=range].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50%; 
+  background: #FF9100;
+  cursor: pointer;
+}
+
+.site-content input[type=range].slider::-moz-range-thumb {
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50%;
+  background: #FF9100;
+  cursor: pointer;
+}
+/* Style the form */
+.tab{padding: 15px 15px 15px 15px; background-color: #fff;}
+.tab p{ margin-bottom:15px;}
+body.yellow .tab p{color:#3e4044;}
+/* Style the input fields */
+.site-content input {
+  width: 100%;
+  border-radius: 2px !important;
+  background:#fff !important; 
+	color: #333;
+	display: block;  
+	font-size: 16px;
+	border: 1px solid #ccc !important;
+	padding: 6px 10px;
+	height: 38px;
+	width: 100%;
+}
+.site-content input.error {
+    border-color: #FF9100!important;
+    background: #ffeace !important;
+}
+
+/* Hide all steps by default: */
+.tab:not(:first-of-type) {
+  display: none;
+}
+.tab h5{ color:#FF9100; font-size: 20px; font-weight: 600;  margin-bottom: 20px;  padding-bottom: 8px;  border-bottom: 1px solid #FF9100; display:block;}
+
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #FF9100;
+}
+.site-content button[type="button"],
+.site-content button[type="submit"]{
+	background-color: #FF9100 !important;
+    border: 1px solid #FF9100;
+    color: #fff !important;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 8px 24px;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.checkgroup{
+	position:relative;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+.checkgroup input[type="checkbox"]{
+	width:25px;
+	height:25px;
+	background:#fff !important;
+	border-radius:3px !important;
+	border:2px solid #3e4044 !important;
+	order:1;
+}
+.checkgroup input[type=checkbox]:checked:after{
+	opacity:1;
+}
+.checkgroup input[type=checkbox]:after {
+    content: "";
+    opacity: 0;
+    display: block;
+    left: 7px;
+    top: 3px;
+    position: absolute;
+    width: 7px;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(30deg);
+}
+
+.checkgroup label{ order:3; width:100%; flex:0 0 100%;}
+.checkgroup  label.forcheck{
+	position:relative;
+	order:2;
+	font-size:16px; font-weight:600;
+	padding-left:15px;
+	width:auto;
+	flex:1;
+}
+.checkgroup input[type=checkbox]:focus{
+	box-shadow:none !important; outline:none !important;
+}
+.txt{ font-size:16px;}
+
+
+
+.set{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom:10px;
+}
+.set > a{
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  color: #FF9100;
+  font-weight: 600;
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+}
+.set > a.active{
+  color: #FF9100;
+}
+.content{
+  display:none;
+}
+.content p{
+  padding: 0;
+  font-size:16px;
+  margin: 0;
+  color: #fff;
+}
